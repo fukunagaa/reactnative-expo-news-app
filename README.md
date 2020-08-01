@@ -57,6 +57,18 @@ Run in web browser
 
 ## 補足
 
+### dummy データ
+
+- picsum モックデータ
+  > https://picsum.photos/
+- Lorem_ipsum
+  > https://ja.wikipedia.org/wiki/Lorem_ipsum
+
+### 使用 API
+
+- newsAPI
+  > https://newsapi.org/
+
 ### アプリ作成でのいろいろ
 
 react には`function component`と`class component`の 2 種類の記載方法が存在する
@@ -77,7 +89,7 @@ react には`function component`と`class component`の 2 種類の記載方法�
 - SafeAreaView
   アプリに余白エリアを入れた表示をする
 
-#### Hook の導入
+#### Hook の導入(function コンポーネント)
 
 フック (hook) は React 16.8 で追加された新機能です。
 state などの React の機能を、クラスを書かずに使えるようになります。
