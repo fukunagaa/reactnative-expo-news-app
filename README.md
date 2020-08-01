@@ -57,6 +57,16 @@ Run in web browser
 
 ## 補足
 
+### 詰まったところ
+
+SafeAreaView を使えばいい感じに Top がパディングされると思っていたが、
+androidOS は非対応みたいだった。(公式でも with iOS version 11 or later とかかれていた)
+そのため`paddingTop: Platform.OS === 'android' ? 25 : 0`で判定し、パディングする。
+
+> [公式] https://reactnative.dev/docs/safeareaview
+
+> [stackoberflow] https://stackoverflow.com/questions/51289587/react-native-how-to-use-safeareaview-for-android-notch-devices/55017347
+
 ### dummy データ
 
 - picsum モックデータ
