@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView, Text } from "react-native";
 import ListItem from "./components/ListItem";
-import articles from "./dummies/articles.json";
+import dummtyArticles from "./dummies/articles.json";
 
 const styles = StyleSheet.create({
   container: {
@@ -11,6 +11,14 @@ const styles = StyleSheet.create({
 });
 
 export default function App() {
+  const [articles, serArticles] = useState([]);
+  useEffect(() => {
+    alert("called!");
+    const timer = setTimeout(() => {
+      serArticles(dummtyArticles);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
