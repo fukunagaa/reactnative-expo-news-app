@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, SafeAreaView, Text } from "react-native";
 import ListItem from "./components/ListItem";
 import dummtyArticles from "./dummies/articles.json";
+import Constants from "expo-constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
 export default function App() {
   const [articles, serArticles] = useState([]);
   useEffect(() => {
-    alert("called!");
+    alert(Constants.manifest.extra.newsApiKey);
     const timer = setTimeout(() => {
       serArticles(dummtyArticles);
     }, 2000);
