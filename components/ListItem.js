@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const ListItem = ({ imageUrl, title, auther }) => {
+const ListItem = ({ imageUrl, title, author }) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
@@ -42,7 +42,7 @@ const ListItem = ({ imageUrl, title, auther }) => {
         <Text numberOfLines={3} style={styles.text}>
           {title}
         </Text>
-        <Text style={styles.sabText}>{auther}</Text>
+        <Text style={styles.sabText}>{author}</Text>
       </View>
     </View>
   );
