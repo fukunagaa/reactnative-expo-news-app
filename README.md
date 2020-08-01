@@ -61,6 +61,42 @@ Run in web browser
 
 react には`function component`と`class component`の 2 種類の記載方法が存在する
 
+- function component
+  現在では推奨されていて、公式でもよく使われている
+  Hooks の導入から State を扱えるようになった(useState, useEffect)
+
+- class component
+  State, ライフサイクル(ComponentDidMount など)を使えると言われていたが、Hooks の導入からその差はなくなっている。
+  記述をシンプルにかける、動作が少し早い？を言われている。
+
+#### REACT NATIVE の API
+
+- FlatList
+  スクロール可能のリストを読み込む
+
+- SafeAreaView
+  アプリに余白エリアを入れた表示をする
+
+#### Hook の導入
+
+フック (hook) は React 16.8 で追加された新機能です。
+state などの React の機能を、クラスを書かずに使えるようになります。
+function コンポネントで書くことを推奨されている。
+React Native は React Native 0.59 リリース以降でフックをサポートします。
+
+- useState
+  function コンポーネントで state などの機能を使うことができる。
+
+- useEffect
+  デフォルトではレンダーが終了した後に関数が毎回動作します。
+  特定の値が変化した時のみ動作させるようにすることもできます。
+
+#### Expo
+
+- expo-constants
+  app.json に記載することで定数が使える
+  > https://docs.expo.io/workflow/configuration/
+
 #### コンポーネントについて
 
 適切な粒度の component に分ける
