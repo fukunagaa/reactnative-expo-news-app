@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View, FlatList, SafeAreaView, Text } from "react-native";
+import { StyleSheet, FlatList, SafeAreaView } from "react-native";
 import ListItem from "./components/ListItem";
-import dummtyArticles from "./dummies/articles.json";
 import Constants from "expo-constants";
 import axios from "axios";
 
