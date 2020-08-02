@@ -91,13 +91,58 @@ react には`function component`と`class component`の 2 種類の記載方法�
   State, ライフサイクル(ComponentDidMount など)を使えると言われていたが、Hooks の導入からその差はなくなっている。
   記述をシンプルにかける、動作が少し早い？を言われている。
 
-#### REACT NATIVE の API
+#### Expo(ReactNative) の API
+
+- expo
+  > https://docs.expo.io/
+- react native
+
+  > https://reactnative.dev/docs/getting-started
 
 - FlatList
   スクロール可能のリストを読み込む
 
 - SafeAreaView
   アプリに余白エリアを入れた表示をする
+
+- TouchavleOpacity
+  タッチイベント
+
+- webView
+  webUrl から サイトを表示
+
+#### React Navigation
+
+> https://reactnavigation.org/
+
+- インストール
+
+```
+$ npm install @react-navigation/native
+```
+
+- Expo managed project のため以下をインストール
+
+```
+$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+
+- 今後使うため stackNavigator をインストール
+
+```
+$ npm install @react-navigation/stack
+```
+
+- Hello React Navigation
+
+Navigator からの表示まで
+
+- Moving between screens
+
+画面の遷移の書き方
+
+- Passing parameters to routes
+  画面間のパラメータの受け渡し
 
 #### Hook の導入(function コンポーネント)
 
