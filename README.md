@@ -144,6 +144,9 @@ Navigator からの表示まで
 - Passing parameters to routes
   画面間のパラメータの受け渡し
 
+- createBottomTabNavigator
+  下に TAB ナビゲーションを表示
+
 #### Hook の導入(function コンポーネント)
 
 フック (hook) は React 16.8 で追加された新機能です。
