@@ -15,7 +15,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.kiwi.news-app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.kiwi.newsApp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

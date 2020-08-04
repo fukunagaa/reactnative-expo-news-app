@@ -249,3 +249,26 @@ npm start(expo start)しているとホットリロードされる
 iOS/Android エンジニアがいる => Swift,Kotlin
 iOS/Android エンジニアがいない => ネイティブの特定の SDK や機能を使いたい => React Native
 iOS/Android エンジニアがいない => ネイティブの特定の SDK や機能を使わなくてよい => Expo + React Native
+
+## Expo 開発の流れ
+
+1. 開発中
+   =>`expo start`で JS バンドル(シミュレータや実機 + Expo Client アプリが必要)
+2. 個人、社内での動作確認
+   =>`expo publish`で Expo サーバに JS バンドルをアップロードし、Expo サーバから JS バンドル(Expo Client アプリが必要)
+3. ストア申請
+   =>`expo build:ios`または`expo build:android`で Expo サーバに JS バンドルをアップロードする
+   =>expo が(ios:ipa, android:apk)ファイルを作成してくれるため、それを使い申請を行う
+   =>apple Store や google play からインストールが可能となる
+
+- releace-channel について
+  JS バンドルは「個人、社内での動作確認用」と「ストア申請用」の 2 種類あり、
+  混ざってしまうと、「個人、社内での動作確認用」でアップロードしたが、「ストア申請用」でアップロードしてしまった。
+  と、いうことになりかねない。
+  そこで、以下をつける
+  `expo publish` : default として管理される
+  `expo publish --release-channel=production` : production として管理される
+
+- Expo SDK のバージョンアップ
+  最大 5 つ前までしかサポートしていないためこまめにアップグレードが必要となる
+  > [UpgradingYourApp] https://blog.expo.io/
