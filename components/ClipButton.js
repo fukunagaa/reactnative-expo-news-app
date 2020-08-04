@@ -3,7 +3,9 @@ import { StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    padding: 5,
+  },
 });
 
 const ClipButton = ({ onPress, enable }) => {
